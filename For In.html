@@ -1,0 +1,22 @@
+<html>
+<head><title>Factorials</title></head>
+<body>
+<h2>Table of Factorials</h2>
+<script>
+function propertyNames(obj)
+{
+ var names="";
+ for(var name in obj) names+=name+"\n";
+ alert(names)	
+}
+function initNames()
+{
+	var obj = new Object();
+	obj.name = 1;
+	//var obj.name={1,2,3};
+	propertyNames(obj);
+}
+</script>
+<button type="button" onClick="initNames()">Click Me</button>
+</body>
+</html>
