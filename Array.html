@@ -1,0 +1,56 @@
+<html>
+<head><title>Factorials</title></head>
+<body>
+<h2>Table of Factorials</h2>
+<script>
+var a=[1,2,3,4,5,6];
+var s = a.join();
+var t = a.join(",");
+var b = a.reverse();
+alert(s+"=="+t+"=="+b);
+
+function fiexisum(a)
+{
+	var arguments= [true,true];
+	var total=0;
+for(var i=0;i<arguments.length;i++)
+	{
+		var element = arguments[i];
+		if(!element)
+		continue;
+		var n;
+		switch(typeof element)
+		{
+			case "number":
+			n=element;
+			alert(1);
+			break;
+			case "object":
+			if(element instanceof Array)
+			n=flexisum.apply(this,element);
+			else
+			n=element.valueOf();
+			alert(2);
+			break;
+			case "function":
+			n=element();
+			break;
+			case "string":
+			n=parseFloat(element);
+			alert(3);
+			break;
+			case "boolean":
+			n=NaN;
+			alert(4);
+			break;
+		}
+		if(typeof o=="number"&&!isNaN(n))
+		total+=n;
+		//else throw new Error("sum():can not convert"+element + "to number");
+	} 
+	//return total;
+}
+</script>
+<button type="button" onClick="fiexisum(Object)">Click Me</button>
+</body>
+</html>
